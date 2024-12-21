@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins';
+    box-sizing: border-box;
+
+}
+/* Remove scrollbar on x-axis */
+@media (min-width: 768px) { /* Adjust breakpoint as needed */
+    body {
+      overflow: hidden;
+    }
+    
+  }
+  @media (min-width: 500px) { /* Adjust breakpoint as needed */
+    body {
+      overflow-y: hidden;
+    }
+    
+  }
+.Cards:hover{
+ color: white !important;
+ box-shadow: 5px  10px 30px  #7b51e6ac;
+}
+
+.Cards2:hover{
+    background-color: #7a51e6 !important;
+  color: white !important;
+  box-shadow: 5px  10px 30px  #7b51e6ac;
+
+}
+
+.Cards2{
+  border-color: #7a51e6 !important;
+
+}
+
+.Plus{
+  border-color: #7a51e6;
+box-shadow: none;
+}
+.Plus:hover{
+  border-color: white;
+}
+
+.table{
+
+    
+  th{
+      color: white;    
+      border-radius: 10px;
+     font-size: small;
+     font-weight: 200;
+
+  }
+
+  tbody{
+      tr{
+          td{
+            padding-top: 13px;
+              font-size: small;
+              font-weight: 200;
+              
+          }
+      }
+  }
+}
+
+.transactions-table {
+  background-color: #8450ec; /* Purple background */
+  color: white; /* White text */
+  border-collapse: collapse;
+  width: 100%; /* Adjust width as needed */
+  display: flex;
+  justify-items: center;
+}
+
+.transactions-table th {
+  padding: 10px; /* Adjust padding as needed */
+  text-align: right;
+}
+
+.transactions-table th {
+  background-color:#8450ec; /* Darker purple header background */
+}
+.transactions-table td{
+  text-align: right;
+  padding-bottom: 10px;
+
+}
